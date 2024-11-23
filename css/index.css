@@ -1,0 +1,483 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+}
+
+/* Estilos para los títulos */
+h1 {
+    font-size: 5.5rem;
+    margin-top: 30%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to right, #a50f56 20%, #da2886 40%, #b4184a 60%, #eb498a 80%);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: shine 5s linear infinite;
+    text-align: left;
+}
+
+@keyframes shine {
+    100% {
+        background-position: 200% center;
+    }
+}
+
+h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    color: rgb(197, 197, 197);
+}
+
+h3 {
+    padding: 80px 0 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    color: rgb(223, 222, 222);
+}
+
+p {
+    font-size: 1.19rem;
+    color: #aaaaaa;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+nav {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    padding: 0 20px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    gap: 20px;
+}
+
+
+nav ul li img {
+    width: 80px;
+    height: 70px;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ff044b;
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+li a.active,
+li a:hover {
+    color: black;
+    background-color: rgb(255, 194, 10);
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+.navbar-custom {
+    background-color: transparent !important;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a.active {
+    color: black;
+    background-color: rgb(255, 194, 10);
+}
+
+/*FINALIZA NAV*/
+
+/*MENU DE HAMBURGUESA*/
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*TERMINA MENÚ DE HAMBURGUESA*/
+
+
+/*INICIA HEADER */
+header {
+    background-color: #000000;
+    height: 800px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+a>button {
+    color: white;
+    font-size: 1.3rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background: none;
+    border: 3px solid #ffbf35;
+    font-family: "Space Grotesk", serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-Redes {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn-Redes a:first-child>button {
+    width: 300px;
+}
+
+a>button:hover {
+    background: #d69c1e;
+    color: black;
+}
+
+a>button i {
+    transition: color 0.3s ease;
+}
+
+a>button:hover i {
+    color: black;
+}
+
+/*FINALIZA HEADER*/
+
+/*MIS PROYECTOS*/
+main {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+main>div {
+    background-color: rgba(31, 31, 31, 0.8);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 20px 0;
+    width: 590px;
+    height: 650px;
+    padding: 20px;
+    transition: background 0.5s ease;
+
+}
+
+main>div:hover {
+    background-color: #930a4a;
+}
+
+main div>img {
+    object-fit: contain;
+    width: 450px;
+    height: 300px;
+    border-radius: 60px;
+}
+
+main div>h2 {
+    color: rgb(232, 232, 232);
+}
+
+main div>p {
+    color: #d5d5d5;
+}
+
+span {
+    margin-top: 5%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+span a>button {
+    width: 150px;
+
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+button {
+    background-color: #b4184a;
+    border: 1px solid #b4184a;
+    color: rgb(239, 239, 239);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    width: 86px;
+    height: 30px;
+    box-shadow: 0px 5px 3px rgba(17, 17, 17, 0.5);
+    border-radius: 50px;
+    padding: 1px;
+}
+
+/*FINALIZA PROYECTOS*/
+
+/*INICIA SLIDER*/
+article {
+    margin-top: 160px;
+    margin-bottom: 50px;
+    height: 950px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilo para los SVG */
+svg {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    gap: 20px;
+
+}
+
+article>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+svg path {
+    fill: #ffffff;
+    transition: fill 0.5s ease;
+}
+
+svg path:hover {
+    fill: #ffb54e;
+}
+
+.slider {
+    overflow: hidden;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    position: relative;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(100% * 6);
+    animation: scroll 17s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: calc(100% / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+
+    }
+}
+
+
+/* TERMINA SLIDER */
+
+footer {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    color: rgb(216, 216, 216);
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav {
+        background-color: rgb(0, 0, 0);
+        height: 100px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        background: rgb(15, 15, 15);
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    li a.active,
+    li a:hover {
+        background-color: rgb(255, 194, 10);
+        color: black;
+        transition: 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    header {
+        height: 1000px;
+        padding: 100px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 250px;
+        height: 200px;
+    }
+
+    .btn-Redes {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .btn-Redes a:first-child>button {
+        width: 100%;
+    }
+
+    a>button {
+        width: 250px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    footer {
+        margin-bottom: 100px;
+    }
+}
