@@ -503,7 +503,7 @@ h4 {
         height: auto;
     }
     main {
-      flex-direction: column; /* Apila los proyectos en una columna en lugar de fila */
+      flex-direction: column; 
       align-items: center;
       font-size: 15px;
       margin: 50px;
@@ -514,7 +514,7 @@ h4 {
     }
   
     main > div {
-      width: 70%; /* Los proyectos ocupan el 80% del ancho de la pantalla */
+      width: 70%;
     }
     main div>img{
         width: 250px;
@@ -524,7 +524,7 @@ h4 {
   
   @media (max-width: 480px) {
     main > div {
-      width: 100%; /* Los proyectos ocupan el 100% del ancho de la pantalla en dispositivos muy pequeños */
+      width: 100%; 
     }
   }
 }
