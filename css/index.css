@@ -468,7 +468,9 @@ h4 {
     .btn-Redes a:first-child>button {
         width: 100%;
     }
-
+    .btn-Redes button{
+        white-space: nowrap;
+    }
     a>button {
         width: 250px;
         font-size: 1rem;
