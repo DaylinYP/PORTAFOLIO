@@ -315,7 +315,7 @@ article {
     display: flex;
     width: max-content;
     gap: 50px;
-    animation: scroll 25s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .slide-track:hover {
@@ -587,8 +587,18 @@ h4 {
     color: #d5d5d5;
     line-height: 2;
 }
-.aprendiendo IMG{
-    width: 100PX;
-    height: 100px;
-    margin-top: 0;
+.aprendiendo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+
+.aprendiendo img {
+    width: 100px !important;
+    height: 100px !important;
+    margin-top: 0 !important;
 }
